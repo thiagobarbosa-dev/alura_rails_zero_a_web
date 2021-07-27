@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root "produtos#index"
+  post '/produtos' => 'produtos#create'
+  get '/produtos/new' => 'produtos#new'
+  root 'produtos#index'
 end
