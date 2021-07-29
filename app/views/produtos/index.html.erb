@@ -3,13 +3,13 @@
     <%= flash[:notice] %>
   </div>
 <% end %>
-
 <div>  
   <table class="table table-bordered table-striped table-hover">
     <thead>
       <tr>
         <th>Nome</th>
         <th>Descrição</th>
+        <th>Departamento</th>
         <th>Preço</th>
       </tr>
     </thead>
@@ -23,6 +23,7 @@
       <tr>
         <th>Nome</th>
         <th>Descrição</th>
+        <th>Departamento</th>
         <th>Preço</th>
       </tr>
     </thead>
@@ -30,5 +31,6 @@
       <%= render @produtos_por_preco %>
     </tbody>
   </table>
+  <br>
   <%= link_to "Criar novo produto", new_produto_path %>
 </div>
